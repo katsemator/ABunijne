@@ -1,9 +1,8 @@
 {
   "57108daa-b445-418b-b866-1394896b0830": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps/connections/shared-commondataser-c70247a6-d23c-4321-b61a-b7bc-0d83651b",
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps/connections/ff955d22ed674231a4a17cf902db6c4b",
     "connectionParameters": {
-      "sku": "Enterprise",
-      "token:grantType": "code"
+      "sku": "Enterprise"
     },
     "connectionRef": {
       "apiTier": "Premium",
@@ -22,7 +21,7 @@
     "id": "57108daa-b445-418b-b866-1394896b0830"
   },
   "a949457c-d8ae-4e05-ac2a-32c54a0fc0a0": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/912b1ab8-b612-4856-aff6-9e4e22d10f5f",
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/918081f706d74b2f851c9e5c8cadaf12",
     "connectionParameters": {
       "workFlowCallbackUri": "https://prod-160.westeurope.logic.azure.com:443/workflows/8e2ea4cba1a6471bba9bee9a0e94453b/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=hfNO3oBzIkDG8GM6xNNhXTrdTzXsClgHng9YTkdkVl8",
       "workflowEndpoint": "/subscriptions/2e6e5a0a-b35f-4167-82de-61b3afa7d1ec/resourceGroups/539b42f37c234b968ed349a2cf101d49-850046a12e33493eb1b1209570ba13f1/providers/Microsoft.Logic/workflows/912b1ab8-b612-4856-aff6-9e4e22d10f5f",
