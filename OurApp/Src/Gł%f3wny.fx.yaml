@@ -213,7 +213,7 @@
     "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(89, 0, 0, 1)
         Height: =702
-        Items: =Sort(Fktury,'Created On',Descending).
+        Items: =Sort(Fktury,'Created On',Descending)
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
