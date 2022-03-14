@@ -176,11 +176,12 @@ przykładoweElementy As screen:
         Height: =32
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
+        IsSearchable: =false
         Items: =Filter(Dostawcy, 'Dostawcy (Widoki)'.Podstawowy)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(89, 0, 0, 1)
         SearchFields: =["crda9_name"]
-        SearchItems: =Search(Filter(Dostawcy, 'Dostawcy (Widoki)'.Podstawowy),ComboBox1_2.SearchText,"crda9_name")
+        SearchItems: =[]
         SelectionFill: =RGBA(164, 38, 44, 1)
         SelectMultiple: =false
         Size: =8
