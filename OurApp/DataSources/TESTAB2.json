@@ -1,0 +1,97 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crda9_testab2s",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crda9_testab2",
+    "MaxGetRowsCount": 500,
+    "Name": "TESTAB2",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "crda9_name": "Name",
+      "crda9_testab2_AsyncOperations": "System Jobs",
+      "crda9_testab2_BulkDeleteFailures": "Bulk Delete Failures",
+      "crda9_testab2_DuplicateBaseRecord": "Duplicate Records (crda9_testab2_DuplicateBaseRecord)",
+      "crda9_testab2_DuplicateMatchingRecord": "Duplicate Records (crda9_testab2_DuplicateMatchingRecord)",
+      "crda9_testab2_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crda9_testab2_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crda9_testab2_ProcessSession": "Process Sessions",
+      "crda9_testab2_SyncErrors": "Sync Errors",
+      "crda9_testab2id": "TESTAB2",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "TESTAB2",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "TESTAB2 (Widoki)",
+    "Name": "_crda9_testab2_views",
+    "RelatedEntityName": "TESTAB2",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "04bdd5b6-6561-49ed-bf73-79b0118ad084": "TESTAB2 Lookup View",
+      "8f72e355-648c-4846-8664-13f5ac1486d1": "Active TESTAB2",
+      "a660e479-f409-493c-8069-43b8cde0c97e": "TESTAB2 Associated View",
+      "c5486063-abf1-4040-8ba6-14ff39285cd5": "TESTAB2 Advanced Find View",
+      "e1b428be-b2dc-47ba-b6d7-4ebcebb22f9c": "Inactive TESTAB2"
+    }
+  },
+  {
+    "DisplayName": "Status (TESTAB2)",
+    "Name": "crda9_testab2_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "TESTAB2"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "TESTAB2",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (TESTAB2)",
+    "Name": "crda9_testab2_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "TESTAB2"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "TESTAB2",
+    "Type": "OptionSetInfo"
+  }
+]

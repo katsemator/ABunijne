@@ -1,0 +1,98 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crda9_fvteksts",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crda9_fvtekst",
+    "MaxGetRowsCount": 500,
+    "Name": "FVTekst",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "crda9_fvtekst_AsyncOperations": "System Jobs",
+      "crda9_fvtekst_BulkDeleteFailures": "Bulk Delete Failures",
+      "crda9_fvtekst_DuplicateBaseRecord": "Duplicate Records (crda9_fvtekst_DuplicateBaseRecord)",
+      "crda9_fvtekst_DuplicateMatchingRecord": "Duplicate Records (crda9_fvtekst_DuplicateMatchingRecord)",
+      "crda9_fvtekst_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crda9_fvtekst_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crda9_fvtekst_ProcessSession": "Process Sessions",
+      "crda9_fvtekst_SyncErrors": "Sync Errors",
+      "crda9_fvtekstid": "FVTekst",
+      "crda9_idfv": "IDFV",
+      "crda9_tekst": "Tekst",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "FVTekst",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "FVTekst (Widoki)",
+    "Name": "_crda9_fvtekst_views",
+    "RelatedEntityName": "FVTekst",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "00337866-bd97-4387-8243-34d2cfa8d091": "FVTekst Lookup View",
+      "1cda179e-b99a-4347-8ebc-c830762be685": "Active FVTekst",
+      "5b382bdc-4aab-4010-9826-0b24a36766d0": "Inactive FVTekst",
+      "9d7b3820-bce6-4322-81d8-8091b79f54bd": "FVTekst Associated View",
+      "cbd5e4da-d3b2-46fa-adec-edd6002093c3": "FVTekst Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (FVTekst)",
+    "Name": "crda9_fvtekst_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "FVTekst"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "FVTekst",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (FVTekst)",
+    "Name": "crda9_fvtekst_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "FVTekst"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "FVTekst",
+    "Type": "OptionSetInfo"
+  }
+]

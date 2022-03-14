@@ -1,0 +1,106 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crda9_pzs",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crda9_pz",
+    "MaxGetRowsCount": 500,
+    "Name": "PZ",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "crda9_dataprzyjecia": "Data przyjęcia",
+      "crda9_kurs": "Kurs",
+      "crda9_magazyn": "Magazyn",
+      "crda9_nrpz": "NrPZ",
+      "crda9_nrzz": "NrZZ",
+      "crda9_pz_AsyncOperations": "System Jobs",
+      "crda9_pz_BulkDeleteFailures": "Bulk Delete Failures",
+      "crda9_pz_DuplicateBaseRecord": "Duplicate Records (crda9_pz_DuplicateBaseRecord)",
+      "crda9_pz_DuplicateMatchingRecord": "Duplicate Records (crda9_pz_DuplicateMatchingRecord)",
+      "crda9_pz_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crda9_pz_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crda9_pz_ProcessSession": "Process Sessions",
+      "crda9_pz_SyncErrors": "Sync Errors",
+      "crda9_pzid": "PZ",
+      "crda9_vatwpln": "VAT w PLN",
+      "crda9_wartoscbruttowpln": "Wartość brutto w PLN",
+      "crda9_wartoscnettowpln": "Wartość netto w PLN",
+      "crda9_wartoscnettowwalucie": "Wartość netto w walucie",
+      "crda9_zakad": "Zakład",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "PZ",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "PZ (Widoki)",
+    "Name": "_crda9_pz_views",
+    "RelatedEntityName": "PZ",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "36ba40b3-da95-49e7-a127-4ed87739cf17": "Inactive PZ",
+      "823ef86f-c15c-42cc-b683-c2344c75282c": "PZ Lookup View",
+      "c7f43071-dac0-4bb3-9e48-64a23d2e9720": "PZ Associated View",
+      "e042d6ce-16fe-467a-91db-006786caec40": "Active PZ",
+      "ebf3ed62-32fb-480c-b32f-963f154c4ee5": "PZ Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (PZ)",
+    "Name": "crda9_pz_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "PZ"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "PZ",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (PZ)",
+    "Name": "crda9_pz_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "PZ"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "PZ",
+    "Type": "OptionSetInfo"
+  }
+]

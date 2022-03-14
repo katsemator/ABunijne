@@ -1,0 +1,266 @@
+przykładoweElementy As screen:
+    Fill: =RGBA(234, 234, 234, 1)
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+
+    Label2_32 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =8.5
+        Text: ="Nazwa dostawcy"
+        Width: =225
+        X: =193
+        Y: =156
+        ZIndex: =1
+
+    Label2_34 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =8.5
+        Text: ="NIP dostawcy"
+        Width: =225
+        X: =483
+        Y: =156
+        ZIndex: =2
+
+    TextInput1_25 As text:
+        BorderColor: =RGBA(153, 153, 153, 1)
+        Clear: =true
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =ComboBox1_2.Selected.'Nr dostawcy'
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 0.6)
+        FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+        FocusedBorderThickness: =2
+        FontWeight: =FontWeight.Lighter
+        Height: =32
+        HoverBorderColor: =RGBA(77, 77, 77, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(116, 116, 116, 1)
+        PressedColor: =
+        PressedFill: =
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Size: =8
+        Width: =230
+        X: =TextInput1_28.Width+TextInput1_28.X+60
+        Y: =181
+        ZIndex: =3
+
+    Label2_36 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =8.5
+        Text: ="Numer dostawcy"
+        Width: =225
+        X: =773
+        Y: =156
+        ZIndex: =4
+
+    DatePicker1_4 As datepicker:
+        BorderColor: =RGBA(153, 153, 153, 1)
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(164, 38, 44, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 0.6)
+        FocusedBorderThickness: =2
+        FontWeight: =FontWeight.Lighter
+        Height: =32
+        HoverDateFill: =RGBA(222, 179, 184, 1)
+        IconBackground: =RGBA(153, 153, 153, 1)
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        SelectedDateFill: =RGBA(164, 38, 44, 1)
+        Size: =8
+        Width: =230
+        X: =768
+        Y: =313
+        ZIndex: =5
+
+    Label2_37 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =8.5
+        Text: |-
+            ="Data wystawienia faktury
+            "
+        Width: =225
+        X: =773
+        Y: =290
+        ZIndex: =6
+
+    TextInput1_27 As text:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        Clear: =true
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =ComboBox1_2.Selected.'Pochodzenie dokumentu'
+        DisabledBorderColor: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(0, 0, 0, 1)
+        DisabledFill: =RGBA(237, 237, 237, 1)
+        DisplayMode: =DisplayMode.Disabled
+        FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+        FocusedBorderThickness: =2
+        FontWeight: =FontWeight.Lighter
+        Height: =32
+        HoverBorderColor: =RGBA(77, 77, 77, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(116, 116, 116, 1)
+        PressedColor: =
+        PressedFill: =
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Size: =8
+        Width: =230
+        X: =188
+        Y: =ComboBox1_2.Y+ComboBox1_2.Height+100
+        ZIndex: =7
+
+    Label2_38 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =8.5
+        Text: ="Pochodzenie dokumentu"
+        Width: =225
+        X: =193
+        Y: =290
+        ZIndex: =8
+
+    ComboBox1_2 As combobox:
+        BorderColor: =RGBA(153, 153, 153, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(153, 153, 153, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(153, 153, 153, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["crda9_nipdostawcy","crda9_adresdostawcy"]
+        FocusedBorderThickness: =2
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Lighter
+        Height: =32
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Items: =Filter(Dostawcy, 'Dostawcy (Widoki)'.Podstawowy)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(89, 0, 0, 1)
+        SearchFields: =["crda9_name"]
+        SearchItems: =Search(Filter(Dostawcy, 'Dostawcy (Widoki)'.Podstawowy),ComboBox1_2.SearchText,"crda9_name")
+        SelectionFill: =RGBA(164, 38, 44, 1)
+        SelectMultiple: =false
+        Size: =8
+        Template: =ListItemTemplate.Double
+        Width: =230
+        X: =188
+        Y: =181
+        ZIndex: =9
+
+    TextInput1_28 As text:
+        BorderColor: =RGBA(153, 153, 153, 1)
+        Clear: =true
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =ComboBox1_2.Selected.'NIP dostawcy'
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 0.6)
+        FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+        FocusedBorderThickness: =2
+        FontWeight: =FontWeight.Lighter
+        Height: =32
+        HoverBorderColor: =RGBA(77, 77, 77, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(116, 116, 116, 1)
+        PressedColor: =
+        PressedFill: =
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Size: =8
+        Width: =230
+        X: =478
+        Y: =181
+        ZIndex: =10
+
+    TextInput1_29 As text:
+        BorderColor: =RGBA(153, 153, 153, 1)
+        Clear: =true
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 0.6)
+        FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+        FocusedBorderThickness: =2
+        FontWeight: =FontWeight.Lighter
+        Height: =32
+        HoverBorderColor: =RGBA(77, 77, 77, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(116, 116, 116, 1)
+        PressedColor: =
+        PressedFill: =
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Size: =8
+        Width: =230
+        X: =478
+        Y: =TextInput1_27.Y
+        ZIndex: =11
+
+    Label2_39 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =8.5
+        Text: |-
+            ="Nr zewnętrzny dokumentu
+            "
+        Width: =225
+        X: =483
+        Y: =TextInput1_29.Y-23
+        ZIndex: =12
+

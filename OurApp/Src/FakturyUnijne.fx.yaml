@@ -1,0 +1,598 @@
+"FakturyUnijne As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Fill: =RGBA(234, 234, 234, 1)
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+    OnVisible: =Set(Ukryj,true)
+
+    Label2_346 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(116, 116, 116, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 0.6)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Size: =11
+        Text: =""
+        Width: =500
+        X: =852
+        Y: =142
+        ZIndex: =1
+
+    Label2_345 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(116, 116, 116, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Size: =11
+        Text: =""
+        Width: =500
+        X: =144
+        Y: =142
+        ZIndex: =2
+
+    Image2_11 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =765
+        Image: ='featured-pages-bg'
+        ImagePosition: =ImagePosition.Center
+        Transparency: =0.45
+        Width: =1227
+        X: =139
+        Y: =3
+        ZIndex: =3
+
+    Image2_12 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =656
+        Image: =pobierz
+        ImagePosition: =ImagePosition.Center
+        Transparency: =0.5
+        Width: =828
+        X: =139
+        Y: =3
+        ZIndex: =4
+
+    Canvas2_4 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =591
+        Width: =Parent.Width
+        Y: =
+        ZIndex: =5
+
+        DataCard2_3 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =561
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            "Gallery9 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Height: =400
+                Items: =FakturyUnijne_1
+                Layout: =Layout.Vertical
+                TemplatePadding: =0
+                TemplateSize: =50
+                Transition: =Transition.Pop
+                Width: =500
+                X: =147
+                Y: =186
+                ZIndex: =1
+
+                Timer4 As timer:
+                    AutoStart: =Start
+                    Duration: =300
+                    Fill: =RGBA(164, 38, 44, 1)
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    OnSelect: =Select(Parent)
+                    OnTimerEnd: =Set(Ukryj,true);Set(Start,false)
+                    Start: =
+                    Visible: =false
+                    X: =40
+                    Y: =40
+                    ZIndex: =6
+
+                Label35 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(62, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =45
+                    OnSelect: =Select(Parent)
+                    Size: =10
+                    Text: =ThisItem.'Numer dostawy'
+                    Width: =78
+                    X: =6
+                    Y: =5
+                    ZIndex: =7
+
+                Label2_343 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(255, 255, 255, 1)
+                    BorderStyle: =BorderStyle.None
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =RGBA(232, 244, 217, 0.6)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =50
+                    Size: =11
+                    Text: =""
+                    Width: =88
+                    X: =405
+                    ZIndex: =8
+
+                Rectangle2_4 As rectangle:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    BorderStyle: =BorderStyle.None
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =2
+                    OnSelect: =Select(Parent)
+                    Width: =500
+                    Y: =48
+                    ZIndex: =9
+
+                Image8 As image:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =30
+                    HoverFill: =RGBA(237, 212, 213, 1)
+                    Image: |-
+                        ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M960%200q133%200%20255%2034t230%2096%20194%20150%20150%20195%2097%20229%2034%20256q0%20133-34%20255t-96%20230-150%20194-195%20150-229%2097-256%2034q-133%200-255-34t-230-96-194-150-150-195-97-229T0%20960q0-133%2034-255t96-230%20150-194%20195-150%20229-97T960%200zm0%201792q115%200%20221-30t198-84%20169-130%20130-168%2084-199%2030-221q0-115-30-221t-84-198-130-169-168-130-199-84-221-30q-115%200-221%2030t-198%2084-169%20130-130%20168-84%20199-30%20221q0%20115%2030%20221t84%20198%20130%20169%20168%20130%20199%2084%20221%2030zm64-896h512v128h-512v512H896v-512H384V896h512V384h128v512z%27%20fill%3D%27%23a0aeb2%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+                    OnSelect: |-
+                        =Set(Ukryj,false);Set(Start,true);Select(Parent);Patch(NrDdoFVUE,{'Numer dostawy':Gallery8.Selected.'Numer dostawy','ID dostawy':Gallery8.Selected.DostawyUnijne,'ID faktury':ThisItem.FakturyUnijne});
+                    PaddingBottom: =4
+                    PaddingLeft: =4
+                    PaddingRight: =4
+                    PaddingTop: =4
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Visible: =If(Ukryj,If(ThisItem.FakturyUnijne in Gallery9_1.AllItems.'ID faktury',false,true))
+                    Width: =30
+                    X: =415
+                    Y: =10
+                    ZIndex: =10
+
+                Image9 As image:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =40
+                    Image: |-
+                        ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M590%207l1017%201017L590%202041l-241-242%20775-775-775-775L590%207z%27%20fill%3D%27%23a4262c%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+                    OnSelect: =Select(Parent);Navigate(ViewFakturyUnijne)
+                    Width: =70
+                    X: =430
+                    Y: =5
+                    ZIndex: =11
+
+            "Gallery9_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Height: =400
+                Items: =Filter(NrDdoFVUE,'ID dostawy'=Text(Gallery8.Selected.DostawyUnijne))
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Controls
+                TemplatePadding: =0
+                TemplateSize: =50
+                Transition: =Transition.Pop
+                Width: =500
+                X: =852
+                Y: =186
+                ZIndex: =2
+
+                Label35_1 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(62, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =45
+                    OnSelect: =Select(Parent)
+                    Size: =10
+                    Text: =ThisItem.'Numer dostawy'
+                    Width: =97
+                    Y: =5
+                    ZIndex: =5
+
+                Label2_344 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(255, 255, 255, 1)
+                    BorderStyle: =BorderStyle.None
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =RGBA(232, 244, 217, 0.6)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =50
+                    Size: =11
+                    Text: =""
+                    Width: =88
+                    X: =405
+                    ZIndex: =6
+
+                Rectangle2_8 As rectangle:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    BorderStyle: =BorderStyle.None
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =2
+                    OnSelect: =Select(Parent)
+                    Width: =500
+                    Y: =48
+                    ZIndex: =7
+
+                Image8_1 As image:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =30
+                    HoverFill: =RGBA(237, 212, 213, 1)
+                    Image: |-
+                        ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1086%2091L281%20896h999v960q0%2040-15%2075t-41%2061-61%2041-75%2015H320q-40%200-75-15t-61-41-41-61-15-75v-807l-37%2037-91-90%20272-272-91-90q-18-18-27-41t-10-50q0-51%2037-90l271-272q18-18%2041-27t50-10q26%200%2049%209t42%2028l90%2091L996%200l90%2091zm66%201765v-832H256v832q0%2026%2019%2045t45%2019h768q26%200%2045-19t19-45zM543%20272L272%20543l90%2091%20272-272-91-90zm1377-16h128v512h-512V640h292q-77-60-167-91t-188-31q-115%200-219%2043t-185%20124l-90-90q100-100%20226-152t268-53q123%200%20238%2041t209%20119V256zm-896%20896v640H896v-640h128zm-256%200v640H640v-640h128zm-256%200v640H384v-640h128z%27%20fill%3D%27%23a0aeb2%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+                    OnSelect: =Select(Parent);Remove(NrDdoFVUE,LookUp(NrDdoFVUE,NrDdoFVUE=ThisItem.NrDdoFVUE))
+                    PaddingBottom: =4
+                    PaddingLeft: =4
+                    PaddingRight: =4
+                    PaddingTop: =4
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Width: =30
+                    X: =435
+                    Y: =10
+                    ZIndex: =8
+
+            Label34 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(116, 116, 116, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =42
+                Size: =13
+                Text: ="FAKTURY UNIJNE"
+                Width: =500
+                X: =147
+                Y: =81
+                ZIndex: =3
+
+            Label34_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(116, 116, 116, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Size: =13
+                Text: ="FAKTURY DODANE DO DOSTAWY"
+                Width: =508
+                X: =852
+                Y: =81
+                ZIndex: =4
+
+            TextInput1_77 As text:
+                BorderColor: =RGBA(255, 255, 255, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 0.8)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =39
+                HintText: ="Wyszukiwarka"
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Reset: =true
+                Size: =12
+                Width: =483
+                X: =148
+                Y: =23
+                ZIndex: =11
+
+    Rectangle1_19 As rectangle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =768
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        Width: =139
+        ZIndex: =6
+
+    Icon2_21 As icon.Folder:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(116, 116, 116, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =35
+        HoverColor: =RGBA(164, 38, 44, 1)
+        Icon: =Icon.Folder
+        X: =37
+        Y: =592
+        ZIndex: =7
+
+    Circle1_18 As circle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        Height: =45
+        Width: =45
+        X: =45
+        Y: =179
+        ZIndex: =8
+
+    Icon1_29 As icon.Home:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =35
+        HoverColor: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Home
+        OnSelect: =Navigate(FakturyUnijne)
+        X: =37
+        Y: =182
+        ZIndex: =9
+
+    Icon3_22 As icon.Document:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(116, 116, 116, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =35
+        HoverColor: =RGBA(164, 38, 44, 1)
+        Icon: =Icon.Document
+        OnSelect: =Navigate(RejestracjaReczna);NewForm(Form3) ; Set(varPowerId,GUID()) ; Reset(Dropdown1_12) ; Reset(Dropdown1_14) ; Reset(TextInput1_18) ; Reset(TextInput1_14) ; Reset(TextInput1_19) ; Reset(Dropdown1_25) ; Reset(TextInput1_20) ; Reset(DatePicker1_2) ; Reset(DatePicker1_3) ; Reset(Dropdown1_2) ; Reset(Dropdown1_3) ; Reset(TextInput1_21) ; Reset(Dropdown1_9) ; Reset(TextInput1_103) ; Reset(TextInput1_22) ; Reset(TextInput1_26) ; Reset(TextInput1_16) ; Reset(TextInput1_17)
+        X: =37
+        Y: =387
+        ZIndex: =10
+
+    Image1_19 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =66
+        Image: ='ab-logo'
+        Width: =137
+        ZIndex: =11
+
+    Rectangle3_17 As rectangle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        Height: =2
+        Width: =30
+        Y: =201
+        ZIndex: =12
+
+    Form2_4 As form:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DataSource: =DostawyUnijne
+        Height: =197
+        Item: =Gallery8.Selected
+        Width: =354
+        X: =1012
+        Y: =571
+        ZIndex: =14
+
+        Attachments_DataCard4 As typedDataCard.attachmentsEditCard:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="{Attachments}"
+            Default: =ThisItem.Attachments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@DostawyUnijne],DataSourceInfo.DisplayName,"{Attachments}")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =197
+            Required: =false
+            Update: =DataCardValue108.Attachments
+            Width: =354
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            TextInput1_67 As text:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =""
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 0.6)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =140
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                Mode: =TextMode.MultiLine
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Size: =9.5
+                Width: =300
+                X: =30
+                Y: =47
+                ZIndex: =1
+
+            DataCardKey114 As label:
+                Align: =Align.Center
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Size: =8.5
+                Text: ="Załączniki"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =17
+                ZIndex: =2
+
+            DataCardValue108 As attachments:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderStyle: =BorderStyle.None
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                DropTargetBackgroundColor: =RGBA(0, 0, 0, 0)
+                DropTargetBorderStyle: =BorderStyle.None
+                DropTargetBorderThickness: =0
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =140
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(222, 179, 184, 1)
+                IsInDataCard: =true
+                ItemColor: =RGBA(255, 255, 255, 1)
+                ItemFill: =RGBA(164, 38, 44, 1)
+                ItemHoverColor: =RGBA(0, 0, 0, 1)
+                ItemHoverFill: =RGBA(222, 179, 184, 1)
+                Items: =Parent.Default
+                NoAttachmentsText: ="Niczego nie załączono."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(89, 0, 0, 1)
+                Size: =8
+                Tooltip: =Parent.DisplayName
+                Width: =300
+                X: =30
+                Y: =47
+                ZIndex: =3
+
+    Button7_1 As button:
+        BorderColor: =RGBA(164, 38, 44, 1)
+        BorderThickness: =0
+        Color: =RGBA(164, 38, 44, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =0
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(164, 38, 44, 1)
+        OnSelect: =Set(vartimerStart,true);
+        PressedBorderColor: =
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =12
+        Text: ="ZAPISZ"
+        Width: =130
+        X: =357
+        Y: =716
+        ZIndex: =15
+
+    Button7_2 As button:
+        BorderColor: =RGBA(164, 38, 44, 1)
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        FocusedBorderThickness: =0
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        HoverColor: =RGBA(164, 38, 44, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        OnSelect: =Back()
+        PressedBorderColor: =
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =12
+        Text: ="POWRÓT"
+        Width: =130
+        X: =164
+        Y: =716
+        ZIndex: =16
+
+    Image1_20 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =768
+        Image: ='Circle-Loading'
+        ImagePosition: =ImagePosition.Stretch
+        Visible: =vartimerStart
+        Width: =1366
+        ZIndex: =17
+
+    Timer3 As timer:
+        AutoStart: =vartimerStart
+        Duration: =2500
+        Fill: =RGBA(164, 38, 44, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+        OnTimerEnd: =Set(vartimerStart,false);If(SubmitForm(Form2_4),Navigate('Numer dostawy'))
+        OnTimerStart: =
+        Visible: =false
+        X: =40
+        Y: =40
+        ZIndex: =18
+
+    Image10 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =768
+        Image: ='pobierz — kopia'
+        ImagePosition: =ImagePosition.Center
+        Visible: =varLoading
+        Width: =1366
+        ZIndex: =19
+
+    Timer5 As timer:
+        Duration: =1000
+        Fill: =RGBA(164, 38, 44, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+        OnTimerEnd: =Set(varLoading,false)
+        Start: =varLoading
+        Visible: =false
+        X: =495
+        Y: =91
+        ZIndex: =20
+

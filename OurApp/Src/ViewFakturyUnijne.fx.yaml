@@ -1,0 +1,1266 @@
+"ViewFakturyUnijne As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Fill: =RGBA(234, 234, 234, 1)
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+    OnHidden: =Set(VarReset,false)
+    OnVisible: =Set(IdentyfikatorZałączników,GUID());Set(VarReset,true)
+
+    Image2_13 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =765
+        Image: ='featured-pages-bg'
+        ImagePosition: =ImagePosition.Center
+        Transparency: =0.45
+        Width: =1227
+        X: =139
+        Y: =3
+        ZIndex: =1
+
+    Image2_14 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =656
+        Image: =pobierz
+        ImagePosition: =ImagePosition.Center
+        Transparency: =0.5
+        Width: =828
+        X: =139
+        Y: =3
+        ZIndex: =2
+
+    Canvas2_5 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =592
+        Width: =1227
+        X: =139
+        Y: =
+        ZIndex: =3
+
+        DataCard2_4 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =504
+            Width: =1227
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Label2_339 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                Size: =8.5
+                Text: ="Nazwa dostawcy"
+                Width: =225
+                X: =351
+                Y: =70
+                ZIndex: =1
+
+            Label2_347 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                Size: =8.5
+                Text: ="NIP dostawcy"
+                Width: =225
+                X: =641
+                Y: =70
+                ZIndex: =2
+
+            Label2_352 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                Size: =8.5
+                Text: |-
+                    ="Data wystawienia faktury
+                    "
+                Width: =225
+                X: =351
+                Y: =190
+                ZIndex: =6
+
+            Label2_354 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                Size: =8.5
+                Text: ="Typ dokumentu"
+                Width: =225
+                X: =931
+                Y: =190
+                ZIndex: =8
+
+            Label2_350 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                Size: =8.5
+                Text: ="Pochodzenie dokumentu"
+                Width: =225
+                X: =936
+                Y: =70
+                ZIndex: =10
+
+            TextInput1_152 As text:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Gallery9.Selected.'NIP dostawcy'
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 0.6)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =39
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Reset: =true
+                Size: =8
+                Width: =230
+                X: =636
+                Y: =100
+                ZIndex: =16
+
+            TextInput1_241 As text:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Gallery9.Selected.'Nr zewnętrzny dokumentu'
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 0.6)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =39
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Size: =8
+                Width: =230
+                X: =56
+                Y: =220
+                ZIndex: =19
+
+            Label2_351 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                Size: =8.5
+                Text: |-
+                    ="Nr zewnętrzny dokumentu
+                    "
+                Width: =225
+                X: =61
+                Y: =190
+                ZIndex: =20
+
+            Label2_353 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                Size: =8.5
+                Text: |-
+                    ="Data wpływu
+                    "
+                Width: =225
+                X: =641
+                Y: =190
+                ZIndex: =22
+
+            TextInput1_242 As text:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Gallery9.Selected.'Kwota brutto w walucie'
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 0.6)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =39
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Reset: =true
+                Size: =8
+                Width: =230
+                X: =56
+                Y: =340
+                ZIndex: =25
+
+            Label2_356 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                Size: =8.5
+                Text: ="Kwota brutto w walucie"
+                Width: =225
+                X: =61
+                Y: =310
+                ZIndex: =26
+
+            TextInput1_244 As text:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =39
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Size: =8
+                Visible: =If(TextInput1_254.Text="Korekta ilościowa" Or TextInput1_254.Text="Korekta serwisowa",true,false)
+                Width: =230
+                X: =931
+                Y: =340
+                ZIndex: =27
+
+            Label2_359 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                Size: =8.5
+                Text: |-
+                    ="Numer faktury korygowanej
+                    "
+                Visible: =If(TextInput1_254.Text="Korekta ilościowa" Or TextInput1_254.Text="Korekta serwisowa",true,false)
+                Width: =225
+                X: =936
+                Y: =310
+                ZIndex: =28
+
+            Label1_2 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =48
+                Size: =13
+                Text: =TextInput1_254.Text
+                Visible: =false
+                X: =973
+                Y: =573
+                ZIndex: =29
+
+            Button4_2 As button:
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(164, 38, 44, 1)
+                FontWeight: =FontWeight.Semibold
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                OnSelect: =Set(varGroup3,true) ; NewForm(Form4_2)
+                Size: =15
+                Text: ="Załączniki"
+                Visible: =false
+                X: =984
+                Y: =865
+                ZIndex: =38
+
+            TextInput1_245 As text:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 0.6)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =39
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Size: =8
+                Visible: =If(Text(TextInput1_254.Text) = "Faktura transportowa",true,false)
+                Width: =230
+                X: =926
+                Y: =340
+                ZIndex: =41
+
+            Label2_360 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                Size: =8.5
+                Text: ="Kwota netto w walucie"
+                Visible: =If(Text(TextInput1_254.Text) = "Faktura transportowa",true,false)
+                Width: =225
+                X: =931
+                Y: =310
+                ZIndex: =42
+
+            Label2_357 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                Size: =8.5
+                Text: ="Waluta"
+                Width: =225
+                X: =351
+                Y: =310
+                ZIndex: =48
+
+            TextInput1_243 As text:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Gallery9.Selected.Kurs
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 0.6)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =39
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Size: =8
+                Width: =230
+                X: =636
+                Y: =340
+                ZIndex: =49
+
+            Label2_358 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                Size: =8.5
+                Text: |-
+                    ="Kurs
+                    "
+                Width: =225
+                X: =641
+                Y: =310
+                ZIndex: =50
+
+            Label2_348 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                Size: =8.5
+                Text: ="NIP dostawcy"
+                Width: =225
+                X: =61
+                Y: =70
+                ZIndex: =71
+
+            TextInput1_163 As text:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Gallery9.Selected.'NIP dostawcy'
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 0.6)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =39
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Reset: =true
+                Size: =8
+                Width: =230
+                X: =56
+                Y: =100
+                ZIndex: =72
+
+            TextInput1_250 As text:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Gallery9.Selected.'Nazwa dostawcy'
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 0.6)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =39
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Reset: =true
+                Size: =8
+                Width: =230
+                X: =346
+                Y: =100
+                ZIndex: =73
+
+            TextInput1_251 As text:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Gallery9.Selected.'Pochodzenie dokumentu'
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 0.6)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =39
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Reset: =true
+                Size: =8
+                Width: =230
+                X: =926
+                Y: =100
+                ZIndex: =74
+
+            TextInput1_252 As text:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Text(Gallery9.Selected.'Data wystawienia faktury',"dd.mm.yyyy")
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 0.6)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =39
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Reset: =true
+                Size: =8
+                Width: =230
+                X: =346
+                Y: =220
+                ZIndex: =75
+
+            TextInput1_253 As text:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Text(Gallery9.Selected.'Data wpływu',"dd.mm.yyyy")
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 0.6)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =39
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Reset: =true
+                Size: =8
+                Width: =230
+                X: =636
+                Y: =220
+                ZIndex: =76
+
+            TextInput1_254 As text:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Gallery9.Selected.'Typ dokumentu'
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 0.6)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =39
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Reset: =true
+                Size: =8
+                Width: =230
+                X: =926
+                Y: =220
+                ZIndex: =77
+
+            TextInput1_255 As text:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Gallery9.Selected.Waluta
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 0.6)
+                FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Lighter
+                Height: =39
+                HoverBorderColor: =RGBA(77, 77, 77, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(116, 116, 116, 1)
+                PressedColor: =
+                PressedFill: =
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Reset: =true
+                Size: =8
+                Width: =230
+                X: =346
+                Y: =340
+                ZIndex: =78
+
+    Label2_4 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =768
+        Size: =13
+        Text: =""
+        Visible: =widocznośćPDF
+        Width: =1366
+        ZIndex: =12
+
+    PdfViewer1_11 As pdfViewer:
+        Document: =Dropdown1_32.Selected.Value
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =768
+        ShowControls: =true
+        Visible: =widocznośćPDF
+        Width: =1366
+        ZIndex: =13
+
+    Dropdown1_32 As dropdown:
+        BorderColor: =RGBA(166, 166, 169, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(153, 153, 153, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronFill: =RGBA(255,255,255,1)
+        ChevronHoverBackground: =RGBA(153, 153, 153, 1)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =2
+        FontWeight: =FontWeight.Lighter
+        Height: =25
+        HoverBorderColor: =RGBA(77, 77, 77, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Items: =CzytnikPDF
+        PaddingLeft: =12
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(89, 0, 0, 1)
+        SelectionFill: =RGBA(164, 38, 44, 1)
+        Size: =10
+        Visible: =widocznośćPDF
+        Width: =445
+        X: =460.5
+        Y: =20
+        ZIndex: =14
+
+    Icon1_27 As icon.CancelBadge:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(255, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =40
+        Icon: =Icon.CancelBadge
+        OnSelect: =Set(widocznośćPDF,false)
+        Visible: =widocznośćPDF
+        Width: =40
+        X: =964
+        Y: =11
+        ZIndex: =15
+
+    Image1_22 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =768
+        Image: =
+        ImagePosition: =ImagePosition.Stretch
+        Visible: =varTimer
+        Width: =1366
+        ZIndex: =16
+
+    Timer1_2 As timer:
+        AutoStart: =varTimer
+        Duration: =3000
+        Fill: =RGBA(164, 38, 44, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+        OnTimerEnd: =If(SubmitForm(Form3),Notify("Zapisano",NotificationType.Success);Navigate(Główny),Notify("Brak spełnionych wymagań",NotificationType.Error)) ;Set(varTimer,false)
+        Visible: =false
+        X: =1147
+        Y: =505
+        ZIndex: =23
+
+    Group4_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =23
+
+        Rectangle1_21 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(251, 251, 251, 1)
+            Height: =768
+            Visible: =varGroup3
+            Width: =1366
+            ZIndex: =18
+
+        Form4_2 As form:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            DataSource: ='Faktury - Załączniki'
+            Height: =260
+            Visible: =varGroup3
+            Width: =1059
+            Y: =3
+            ZIndex: =19
+
+            File_DataCard1_2 As typedDataCard.fileEditCard:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda9_file"
+                Default: |-
+                    =If(!IsBlank(ThisItem.File.FileName), Table({DisplayName: ThisItem.File.FileName, Value: ThisItem.File.Value}), Blank())
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Faktury - Załączniki'],DataSourceInfo.DisplayName,"crda9_file")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue25_2.Attachments
+                Width: =706
+                X: =1
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey25_2 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(89, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue25_2 As attachments:
+                    AddAttachmentText: ="Przekaż plik"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    FocusedBorderThickness: =4
+                    Height: =170
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(222, 179, 184, 1)
+                    IsInDataCard: =true
+                    ItemColor: =RGBA(255, 255, 255, 1)
+                    ItemFill: =RGBA(164, 38, 44, 1)
+                    ItemHoverColor: =RGBA(0, 0, 0, 1)
+                    ItemHoverFill: =RGBA(222, 179, 184, 1)
+                    Items: =Parent.Default
+                    MaxAttachments: =1
+                    MaxAttachmentsText: =""
+                    NoAttachmentsText: ="Brak pliku."
+                    PaddingBottom: =5
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(89, 0, 0, 1)
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey25_2.Y + DataCardKey25_2.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage27_2 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(168, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue25_2.Y + DataCardValue25_2.Height
+                    ZIndex: =3
+
+                StarVisible27_2 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(89, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =DataCardKey25_2.Height
+                    Size: =13
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey25_2.Y
+                    ZIndex: =4
+
+            ID_DataCard3_2 As typedDataCard.textualEditCard:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda9_id"
+                Default: =IdentyfikatorZałączników
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Faktury - Załączniki'],DataSourceInfo.DisplayName,"crda9_id")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Faktury - Załączniki'], DataSourceInfo.MaxLength, "crda9_id")
+                Required: =false
+                Update: =DataCardValue27_2.Text
+                Visible: =false
+                Width: =353
+                X: =2
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey28_2 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(89, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue27_2 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    FocusedBorderThickness: =4
+                    HoverBorderColor: =RGBA(89, 0, 0, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(222, 179, 184, 1)
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =13
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey28_2.Y + DataCardKey28_2.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage30_2 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(168, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue27_2.Y + DataCardValue27_2.Height
+                    ZIndex: =3
+
+                StarVisible30_2 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(89, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =DataCardKey28_2.Height
+                    Size: =13
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey28_2.Y
+                    ZIndex: =4
+
+            Name_DataCard1_2 As typedDataCard.textualEditCard:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda9_name"
+                Default: =ThisItem.Name
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Faktury - Załączniki'],DataSourceInfo.DisplayName,"crda9_name")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Faktury - Załączniki'], DataSourceInfo.MaxLength, "crda9_name")
+                Required: =false
+                Update: =DataCardValue1_2.Text
+                Width: =353
+                X: =0
+                Y: =0
+                ZIndex: =20
+
+                DataCardKey1_2 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(89, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: ="Nazwa"
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1_2 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    FocusedBorderThickness: =4
+                    HoverBorderColor: =RGBA(89, 0, 0, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(222, 179, 184, 1)
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =13
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1_2.Y + DataCardKey1_2.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1_2 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(168, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1_2.Y + DataCardValue1_2.Height
+                    ZIndex: =3
+
+                StarVisible1_2 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(89, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =DataCardKey1_2.Height
+                    Size: =13
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1_2.Y
+                    ZIndex: =4
+
+        "Gallery2_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Height: =476
+            Items: =Filter('Faktury - Załączniki',ID = Text(IdentyfikatorZałączników))
+            Layout: =Layout.Vertical
+            TemplatePadding: =0
+            TemplateSize: =Min(160, Self.Height - 60)
+            Visible: =varGroup3
+            Width: =1366
+            Y: =292
+            ZIndex: =20
+
+            Separator4_2 As rectangle:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Fill: =RGBA(89, 0, 0, 1)
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - 1
+                ZIndex: =5
+
+            Label3_2 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: =ThisItem.Name
+                X: =37
+                Y: =70
+                ZIndex: =6
+
+            Label4_4 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: ="Nazwa"
+                X: =37
+                Y: =10
+                ZIndex: =7
+
+            Label5_2 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =33
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: =ThisItem.File.FileName
+                Width: =223
+                X: =263
+                Y: =60
+                ZIndex: =8
+
+            Label4_5 As label:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: ="Plik"
+                X: =263
+                Y: =10
+                ZIndex: =9
+
+            Icon2_23 As icon.Cancel:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Icon: =Icon.Cancel
+                OnSelect: =Select(Parent) ; Remove('Faktury - Załączniki',ThisItem)
+                X: =1258
+                Y: =46
+                ZIndex: =10
+
+        Button2_49 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(164, 38, 44, 1)
+            FontWeight: =FontWeight.Semibold
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+            OnSelect: =SubmitForm(Form4_2) ; NewForm(Form4_2)
+            Size: =15
+            Text: ="Dodaj"
+            Visible: =varGroup3
+            X: =1082
+            Y: =113
+            ZIndex: =21
+
+        Icon2_22 As icon.Cancel:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(89, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varGroup3,false)
+            Visible: =
+            X: =1266
+            Y: =11
+            ZIndex: =22
+
+    Group5_15 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =23
+
+        Rectangle1_20 As rectangle:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =768
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            Width: =139
+            ZIndex: =4
+
+        Icon2_24 As icon.Folder:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(116, 116, 116, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =35
+            HoverColor: =RGBA(164, 38, 44, 1)
+            Icon: =Icon.Folder
+            X: =37
+            Y: =592
+            ZIndex: =5
+
+        Circle1_19 As circle:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Fill: =RGBA(164, 38, 44, 1)
+            Height: =45
+            Width: =45
+            X: =45
+            Y: =382
+            ZIndex: =7
+
+        Icon1_30 As icon.Home:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(116, 116, 116, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =35
+            HoverColor: =RGBA(164, 38, 44, 1)
+            Icon: =Icon.Home
+            OnSelect: =Navigate(Główny)
+            X: =37
+            Y: =182
+            ZIndex: =8
+
+        Icon3_23 As icon.Document:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =35
+            HoverColor: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.Document
+            X: =37
+            Y: =387
+            ZIndex: =9
+
+        Image1_21 As image:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =66
+            Image: ='ab-logo'
+            Width: =137
+            ZIndex: =10
+
+        Rectangle3_18 As rectangle:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Fill: =RGBA(164, 38, 44, 1)
+            Height: =2
+            Width: =30
+            Y: =404
+            ZIndex: =11
+
+    Button7_3 As button:
+        BorderColor: =RGBA(164, 38, 44, 1)
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        FocusedBorderThickness: =0
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        HoverColor: =RGBA(164, 38, 44, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        OnSelect: =Back()
+        PressedBorderColor: =
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =12
+        Text: ="POWRÓT"
+        Width: =130
+        X: =164
+        Y: =716
+        ZIndex: =24
+

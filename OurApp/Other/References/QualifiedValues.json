@@ -1,0 +1,143 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_crda9_dostawcy_forms",
+      "Namespace": "Dostawcy (Formularze)",
+      "Values": {
+        "Dostawcy formularz główny": "9ab54b61-d888-ec11-93b0-6045bd8c33ba",
+        "Information": "c9050031-e6b7-4bea-8d97-e8f2087db125"
+      }
+    },
+    {
+      "Kind": "default.cds_fileattachment_forms",
+      "Namespace": "FileAttachments (Formularze)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_crda9_fakturyzaaczniki_forms",
+      "Namespace": "Faktury - Załączniki (Formularze)",
+      "Values": {
+        "Information": "653a1187-3690-4302-9d00-f0e7cd4e573e"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_testab_forms",
+      "Namespace": "TestAB (Formularze)",
+      "Values": {
+        "Information": "25c3f499-5da9-4296-8b34-ead5e59e7d1d"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_testab2_forms",
+      "Namespace": "TESTAB2 (Formularze)",
+      "Values": {
+        "Information": "5c9b98fb-191a-4790-8b68-c2567b4184f6"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_fktury_forms",
+      "Namespace": "Fktury (Formularze)",
+      "Values": {
+        "Information": "a75c50fb-f762-4563-a5fc-d975612c17d3"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_zzmfg_forms",
+      "Namespace": "ZZMFG (Formularze)",
+      "Values": {
+        "Information": "4520daae-40dc-4b2d-92bb-d50f27fae2de",
+        "ZZMFG formularz główny": "7da8d822-b889-ec11-93b0-6045bd8c33ba"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_lacznikfvizz_forms",
+      "Namespace": "LacznikFViZZ (Formularze)",
+      "Values": {
+        "Information": "3064cbe5-1892-4830-ab26-6481aaa73def"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_zz_forms",
+      "Namespace": "ZZ (Formularze)",
+      "Values": {
+        "Information": "d3730bfc-d960-4994-86db-d19cc1c0b6b7",
+        "ZZ formularz główny": "76107786-817f-ec11-8d21-000d3a4b649d"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_lacznikfvipz_forms",
+      "Namespace": "LacznikFViPZ (Formularze)",
+      "Values": {
+        "Information": "a0df9c3b-4637-45b6-9791-c28b239e4187"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_pz_forms",
+      "Namespace": "PZ (Formularze)",
+      "Values": {
+        "Information": "93c2cd23-4825-4706-8e9a-bc69138eecd3"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_pozycje_forms",
+      "Namespace": "Pozycje (Formularze)",
+      "Values": {
+        "Information": "2ba153d4-c091-4d60-8958-ecaff1fdff25"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_currency_forms",
+      "Namespace": "Currency (Formularze)",
+      "Values": {
+        "Currency formularz główny": "85a6f182-2d96-ec11-b400-000d3abc48ea",
+        "Information": "0e97517c-be5d-499c-8552-935b2f2ccf5b"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_fvtekst_forms",
+      "Namespace": "FVTekst (Formularze)",
+      "Values": {
+        "Information": "f9ee235c-be82-4192-b7ee-c6d1e9e163be"
+      }
+    },
+    {
+      "Kind": "default.cds_systemuser_forms",
+      "Namespace": "Users (Formularze)",
+      "Values": {
+        "Application User": "d26924ef-4d80-46f7-ab1d-e6ae80a54ce8",
+        "Information": "094fb08a-77bb-49e0-b7ea-8dbddfd01294",
+        "User": "c2cd9e55-d4b4-4b55-9951-16ead79643e5",
+        "User form – Business": "c2413504-7eb2-4c59-a087-95d819866114",
+        "User Hierarchy Tile Form": "c68d6c09-d7a7-4959-8d0f-44b8cff9b452"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_dostawyunijne_forms",
+      "Namespace": "DostawyUnijne (Formularze)",
+      "Values": {
+        "Information": "db61bf1c-8b97-43b9-9a79-8a32614af529"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_fakturyunijne_forms",
+      "Namespace": "FakturyUnijne_1 (Formularze)",
+      "Values": {
+        "Information": "48bc6370-dab0-4eed-a9eb-7a7db4615e55"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_nrddofvue_forms",
+      "Namespace": "NrDdoFVUE (Formularze)",
+      "Values": {
+        "Information": "10720ae2-1bf8-46ff-b78b-79ce4d6d9708"
+      }
+    },
+    {
+      "Kind": "default.cds_crda9_faktury_forms",
+      "Namespace": "Faktury (Formularze)",
+      "Values": {
+        "Information": "441428d8-3716-4e28-9448-b3b3c90c6c6e"
+      }
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crda9_lacznikfvizzs",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crda9_lacznikfvizz",
+    "MaxGetRowsCount": 500,
+    "Name": "LacznikFViZZ",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "crda9_fvid": "FVId",
+      "crda9_lacznikfvizz_AsyncOperations": "System Jobs",
+      "crda9_lacznikfvizz_BulkDeleteFailures": "Bulk Delete Failures",
+      "crda9_lacznikfvizz_DuplicateBaseRecord": "Duplicate Records (crda9_lacznikfvizz_DuplicateBaseRecord)",
+      "crda9_lacznikfvizz_DuplicateMatchingRecord": "Duplicate Records (crda9_lacznikfvizz_DuplicateMatchingRecord)",
+      "crda9_lacznikfvizz_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crda9_lacznikfvizz_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crda9_lacznikfvizz_ProcessSession": "Process Sessions",
+      "crda9_lacznikfvizz_SyncErrors": "Sync Errors",
+      "crda9_lacznikfvizzid": "LacznikFViZZ",
+      "crda9_nrzz": "NrZZ",
+      "crda9_status": "Status (crda9_status)",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status (statecode)",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "LacznikFViZZ",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "LacznikFViZZ (Widoki)",
+    "Name": "_crda9_lacznikfvizz_views",
+    "RelatedEntityName": "LacznikFViZZ",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "271931f0-6843-4626-822b-5614d388185d": "Active LacznikFViZZ",
+      "5b58f613-13bf-4ea6-8fb0-69211860df22": "Inactive LacznikFViZZ",
+      "5e1d9f76-e7af-4e9c-97bd-17ec285da9ac": "LacznikFViZZ Advanced Find View",
+      "8f353be7-1f9c-4101-ac29-21b24166eec8": "LacznikFViZZ Associated View",
+      "d5c4ecd8-5786-4291-ba89-0e8d4bf9ccda": "LacznikFViZZ Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (LacznikFViZZ)",
+    "Name": "crda9_lacznikfvizz_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "LacznikFViZZ"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "LacznikFViZZ",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (LacznikFViZZ)",
+    "Name": "crda9_lacznikfvizz_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "LacznikFViZZ"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "LacznikFViZZ",
+    "Type": "OptionSetInfo"
+  }
+]

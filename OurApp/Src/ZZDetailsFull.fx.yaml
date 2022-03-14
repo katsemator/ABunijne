@@ -1,0 +1,737 @@
+"ZZDetailsFull As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Fill: =RGBA(234, 234, 234, 1)
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+    OnVisible: =ClearCollect(ZZCollect,Gallery6_8.AllItems)
+
+    Image5_3 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =768
+        Image: ='featured-pages-bg'
+        ImagePosition: =ImagePosition.Fill
+        Transparency: =0.45
+        Width: =1229
+        X: =137
+        ZIndex: =1
+
+    Canvas3_1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =627
+        Width: =1227
+        X: =139
+        ZIndex: =5
+
+        DataCard3_1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1028
+            Width: =1227
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Group8 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =29
+
+                "Gallery6_8 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    BorderStyle: =BorderStyle.None
+                    Height: =299
+                    Items: =Filter(PZ,NrZZ = varZZ.NrZZ)
+                    Layout: =Layout.Vertical
+                    TemplatePadding: =0
+                    TemplateSize: =63
+                    Width: =1101
+                    X: =65
+                    Y: =589
+                    ZIndex: =18
+
+                    Separator8_8 As rectangle:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Fill: =RGBA(219, 168, 171, 1)
+                        Height: =1
+                        OnSelect: =Select(Parent)
+                        Width: =Parent.TemplateWidth
+                        Y: =Parent.TemplateHeight - 1
+                        ZIndex: =1
+
+                    Label12_8 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(62, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.Verdana
+                        Height: =44
+                        OnSelect: =Select(Parent)
+                        Size: =10
+                        Text: =ThisItem.NrPZ
+                        Width: =277
+                        X: =28
+                        Y: =11
+                        ZIndex: =2
+
+                    Label16_12 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(62, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.Verdana
+                        OnSelect: =Select(Parent)
+                        Size: =10
+                        Text: =LookUp(PZ,NrPZ = ThisItem.NrPZ).Zakład
+                        Width: =313
+                        X: =348
+                        Y: =11
+                        ZIndex: =3
+
+                    Label16_13 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(62, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.Verdana
+                        OnSelect: =Select(Parent)
+                        Size: =10
+                        Text: =LookUp(PZ,NrPZ = ThisItem.NrPZ).'Wartość netto w PLN'
+                        Width: =288
+                        X: =677
+                        Y: =11
+                        ZIndex: =4
+
+                    NextArrow5_8 As icon.ChevronRight:
+                        AccessibleLabel: =Self.Tooltip
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        BorderStyle: =BorderStyle.None
+                        Color: =RGBA(116, 116, 116, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =30
+                        HoverFill: =RGBA(237, 212, 213, 1)
+                        Icon: =Icon.ChevronRight
+                        OnSelect: =Select(Parent); If(Set(varPZ,LookUp(PZ,NrPZ = ThisItem.NrPZ)),Navigate(PZDetails),Notify("Problem z pobraniem PZ",NotificationType.Error)) ; ClearCollect(PozycjeCollect,Filter(Pozycje,NrPZ = ThisItem.NrPZ))
+                        PaddingBottom: =4
+                        PaddingLeft: =4
+                        PaddingRight: =4
+                        PaddingTop: =4
+                        TabIndex: =0
+                        Tooltip: ="Wyświetl szczegóły elementu"
+                        Width: =30
+                        X: =1118
+                        Y: =15
+                        ZIndex: =5
+
+                    Label2_176 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(232, 244, 217, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =62
+                        Size: =11
+                        Text: =""
+                        Width: =140
+                        X: =965
+                        ZIndex: =6
+
+                    NextArrow5_15 As icon.ChevronRight:
+                        AccessibleLabel: =Self.Tooltip
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        BorderStyle: =BorderStyle.None
+                        Color: =RGBA(116, 116, 116, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =30
+                        HoverFill: =RGBA(237, 212, 213, 1)
+                        Icon: =Icon.ChevronRight
+                        OnSelect: =Select(Parent) ; If(Set(varPZ,LookUp(PZ,NrPZ = ThisItem.NrPZ)),Navigate(PZDetails),Notify("Problem z pobraniem PZ",NotificationType.Error)) ; ClearCollect(PozycjeCollect,Filter(Pozycje,NrPZ = ThisItem.NrPZ))
+                        PaddingBottom: =4
+                        PaddingLeft: =4
+                        PaddingRight: =4
+                        PaddingTop: =4
+                        TabIndex: =0
+                        Tooltip: ="Wyświetl szczegóły elementu"
+                        Width: =30
+                        X: =1020
+                        Y: =15
+                        ZIndex: =7
+
+                Label2_175 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =38
+                    Size: =11
+                    Text: =""
+                    Width: =1099
+                    X: =65
+                    Y: =545
+                    ZIndex: =19
+
+                Rectangle2_25 As rectangle:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    BorderStyle: =BorderStyle.None
+                    Fill: =RGBA(219, 168, 171, 0.6)
+                    Height: =343
+                    Width: =2
+                    X: =395
+                    Y: =545
+                    ZIndex: =22
+
+                Label2_173 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(116, 116, 116, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =39
+                    Size: =11
+                    Text: ="Numer PZ"
+                    Width: =267
+                    X: =96
+                    Y: =545
+                    ZIndex: =23
+
+                Label2_172 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(116, 116, 116, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =39
+                    Size: =11
+                    Text: ="Zakład"
+                    Width: =294
+                    X: =420
+                    Y: =545
+                    ZIndex: =24
+
+                Rectangle2_24 As rectangle:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    BorderStyle: =BorderStyle.None
+                    Fill: =RGBA(219, 168, 171, 0.6)
+                    Height: =343
+                    Width: =2
+                    X: =742
+                    Y: =545
+                    ZIndex: =25
+
+                Label2_171 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(116, 116, 116, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =38
+                    Size: =11
+                    Text: ="Wartość netto w PLN"
+                    Width: =267
+                    X: =750
+                    Y: =545
+                    ZIndex: =26
+
+                Rectangle2_27 As rectangle:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    BorderStyle: =BorderStyle.None
+                    Fill: =RGBA(219, 168, 171, 0.6)
+                    Height: =343
+                    Width: =2
+                    X: =1030
+                    Y: =545
+                    ZIndex: =27
+
+                Icon8_7 As icon.Reload:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(89, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =24
+                    Icon: =Icon.Reload
+                    OnSelect: =Refresh(ZZ) ; Refresh(PZ) ; Refresh(LacznikFViPZ) ; Refresh(LacznikFViZZ) ; Refresh(Pozycje)
+                    Width: =32
+                    X: =1087
+                    Y: =552
+                    ZIndex: =28
+
+            Group19 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =30
+
+                Label2_68 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =23
+                    Size: =8.5
+                    Text: ="Nr ZZ"
+                    Width: =212
+                    X: =74
+                    Y: =44
+                    ZIndex: =2
+
+                TextInput1_57 As text:
+                    BorderColor: =RGBA(153, 153, 153, 1)
+                    Clear: =true
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =varZZ.NrZZ
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(255, 255, 255, 0.6)
+                    FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                    FocusedBorderThickness: =2
+                    FontWeight: =FontWeight.Lighter
+                    Height: =32
+                    HoverBorderColor: =RGBA(77, 77, 77, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    PressedBorderColor: =RGBA(116, 116, 116, 1)
+                    PressedColor: =
+                    PressedFill: =
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Size: =8
+                    Width: =217
+                    X: =69
+                    Y: =69
+                    ZIndex: =3
+
+                Label2_92 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =23
+                    Size: =8.5
+                    Text: ="Nazwa dostawcy ZZ"
+                    Width: =212
+                    X: =368
+                    Y: =44
+                    ZIndex: =4
+
+                TextInput1_79 As text:
+                    BorderColor: =RGBA(153, 153, 153, 1)
+                    Clear: =true
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =varZZ.'Nazwa dostawcy ZZ'
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(255, 255, 255, 0.6)
+                    FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                    FocusedBorderThickness: =2
+                    FontWeight: =FontWeight.Lighter
+                    Height: =32
+                    HoverBorderColor: =RGBA(77, 77, 77, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    PressedBorderColor: =RGBA(116, 116, 116, 1)
+                    PressedColor: =
+                    PressedFill: =
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Size: =8
+                    Width: =217
+                    X: =363
+                    Y: =69
+                    ZIndex: =5
+
+                Label2_93 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =23
+                    Size: =8.5
+                    Text: ="Nr systemowy dostawcy ZZ"
+                    Width: =212
+                    X: =655
+                    Y: =44
+                    ZIndex: =6
+
+                TextInput1_80 As text:
+                    BorderColor: =RGBA(153, 153, 153, 1)
+                    Clear: =true
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =varZZ.'Nr Systemowy dostawcy ZZ'
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(255, 255, 255, 0.6)
+                    FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                    FocusedBorderThickness: =2
+                    FontWeight: =FontWeight.Lighter
+                    Height: =32
+                    HoverBorderColor: =RGBA(77, 77, 77, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    PressedBorderColor: =RGBA(116, 116, 116, 1)
+                    PressedColor: =
+                    PressedFill: =
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Size: =8
+                    Width: =217
+                    X: =650
+                    Y: =69
+                    ZIndex: =7
+
+                Label2_94 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =23
+                    Size: =8.5
+                    Text: ="NIP dostawcy ZZ"
+                    Width: =212
+                    X: =952
+                    Y: =44
+                    ZIndex: =8
+
+                TextInput1_81 As text:
+                    BorderColor: =RGBA(153, 153, 153, 1)
+                    Clear: =true
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =varZZ.'NIP dostawcy ZZ'
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(255, 255, 255, 0.6)
+                    FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                    FocusedBorderThickness: =2
+                    FontWeight: =FontWeight.Lighter
+                    Height: =32
+                    HoverBorderColor: =RGBA(77, 77, 77, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    PressedBorderColor: =RGBA(116, 116, 116, 1)
+                    PressedColor: =
+                    PressedFill: =
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Size: =8
+                    Width: =217
+                    X: =947
+                    Y: =69
+                    ZIndex: =9
+
+                Label2_98 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =25
+                    Size: =8.5
+                    Text: ="Komentarz ZZ"
+                    Width: =1090
+                    X: =74
+                    Y: =248
+                    ZIndex: =10
+
+                TextInput1_85 As text:
+                    BorderColor: =RGBA(153, 153, 153, 1)
+                    Clear: =true
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =varZZ.'Komentarz ZZ'
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(255, 255, 255, 0.6)
+                    FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                    FocusedBorderThickness: =2
+                    FontWeight: =FontWeight.Lighter
+                    Height: =180
+                    HoverBorderColor: =RGBA(77, 77, 77, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    Mode: =TextMode.MultiLine
+                    PressedBorderColor: =RGBA(116, 116, 116, 1)
+                    PressedColor: =
+                    PressedFill: =
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Size: =8
+                    Width: =1095
+                    X: =69
+                    Y: =273
+                    ZIndex: =11
+
+                Label2_95 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =23
+                    Size: =8.5
+                    Text: ="Data wystawienia faktury"
+                    Width: =212
+                    X: =72
+                    Y: =143
+                    ZIndex: =12
+
+                TextInput1_82 As text:
+                    BorderColor: =RGBA(153, 153, 153, 1)
+                    Clear: =true
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =varZZ.'Data wystawienia Faktury'
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(255, 255, 255, 0.6)
+                    FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                    FocusedBorderThickness: =2
+                    FontWeight: =FontWeight.Lighter
+                    Height: =32
+                    HoverBorderColor: =RGBA(77, 77, 77, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    PressedBorderColor: =RGBA(116, 116, 116, 1)
+                    PressedColor: =
+                    PressedFill: =
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Size: =8
+                    Width: =217
+                    X: =67
+                    Y: =168
+                    ZIndex: =13
+
+                Label2_96 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =23
+                    Size: =8.5
+                    Text: ="Kwota brutto w walucie ZZ"
+                    Width: =212
+                    X: =368
+                    Y: =143
+                    ZIndex: =14
+
+                TextInput1_83 As text:
+                    BorderColor: =RGBA(153, 153, 153, 1)
+                    Clear: =true
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =varZZ.'Kwota brutto w walucie ZZ'
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(255, 255, 255, 0.6)
+                    FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                    FocusedBorderThickness: =2
+                    FontWeight: =FontWeight.Lighter
+                    Height: =32
+                    HoverBorderColor: =RGBA(77, 77, 77, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    PressedBorderColor: =RGBA(116, 116, 116, 1)
+                    PressedColor: =
+                    PressedFill: =
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Size: =8
+                    Width: =217
+                    X: =363
+                    Y: =168
+                    ZIndex: =15
+
+                Label2_97 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =23
+                    Size: =8.5
+                    Text: ="Waluta ZZ"
+                    Width: =212
+                    X: =655
+                    Y: =141
+                    ZIndex: =16
+
+                TextInput1_84 As text:
+                    BorderColor: =RGBA(153, 153, 153, 1)
+                    Clear: =true
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =varZZ.'Waluta ZZ'
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(255, 255, 255, 0.6)
+                    FocusedBorderColor: =ColorFade(Self.BorderColor,-20%)
+                    FocusedBorderThickness: =2
+                    FontWeight: =FontWeight.Lighter
+                    Height: =32
+                    HoverBorderColor: =RGBA(77, 77, 77, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    PressedBorderColor: =RGBA(116, 116, 116, 1)
+                    PressedColor: =
+                    PressedFill: =
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Size: =8
+                    Width: =217
+                    X: =650
+                    Y: =166
+                    ZIndex: =17
+
+    Button2_25 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(161, 72, 75, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+        OnSelect: =Back()
+        Size: =15
+        Text: ="Powrót"
+        Width: =130
+        X: =180
+        Y: =692
+        ZIndex: =14
+
+    Group5_5 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =40
+        ZIndex: =22
+
+        Rectangle1_8 As rectangle:
+            AccessibleLabel: =
+            BorderColor: =RGBA(89, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =768
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            Width: =139
+            ZIndex: =15
+
+        Circle1_7 As circle:
+            AccessibleLabel: =
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Fill: =RGBA(164, 38, 44, 1)
+            Height: =45
+            Width: =45
+            X: =46
+            Y: =587
+            ZIndex: =16
+
+        Icon1_12 As icon.Home:
+            AccessibleLabel: =
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(116, 116, 116, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =35
+            HoverColor: =RGBA(164, 38, 44, 1)
+            Icon: =Icon.Home
+            OnSelect: =Navigate(Główny)
+            X: =37
+            Y: =182
+            ZIndex: =17
+
+        Icon3_9 As icon.Document:
+            AccessibleLabel: =
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(116, 116, 116, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =35
+            HoverColor: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.Document
+            OnSelect: =Navigate(RejestracjaReczna);NewForm(Form3) ; Set(varPowerId,GUID()) ; Reset(Dropdown1_12) ; Reset(Dropdown1_14) ; Reset(TextInput1_18) ; Reset(TextInput1_14) ; Reset(TextInput1_19) ; Reset(Dropdown1_25) ; Reset(TextInput1_20) ; Reset(DatePicker1_2) ; Reset(DatePicker1_3) ; Reset(Dropdown1_2) ; Reset(Dropdown1_3) ; Reset(TextInput1_21) ; Reset(Dropdown1_9) ; Reset(TextInput1_103) ; Reset(TextInput1_22) ; Reset(TextInput1_26) ; Reset(TextInput1_16) ; Reset(TextInput1_17)
+            X: =37
+            Y: =387
+            ZIndex: =18
+
+        Image1_8 As image:
+            AccessibleLabel: =
+            BorderColor: =RGBA(89, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =66
+            Image: ='ab-logo'
+            Width: =137
+            ZIndex: =19
+
+        Rectangle3_6 As rectangle:
+            AccessibleLabel: =
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Fill: =RGBA(164, 38, 44, 1)
+            Height: =2
+            Width: =30
+            Y: =608
+            ZIndex: =20
+
+        Icon2_8 As icon.Folder:
+            AccessibleLabel: =
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(255, 255, 255, 1)
+            Height: =35
+            HoverColor: =RGBA(164, 38, 44, 1)
+            Icon: =Icon.Folder
+            X: =36
+            Y: =592
+            ZIndex: =21
+

@@ -1,0 +1,344 @@
+"Główny As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Fill: =RGBA(234, 234, 234, 1)
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+    OnVisible: =
+
+    Image2_4 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =765
+        Image: ='featured-pages-bg'
+        ImagePosition: =ImagePosition.Center
+        Transparency: =0.45
+        Width: =1227
+        X: =139
+        Y: =3
+        ZIndex: =1
+
+    Image2_5 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =656
+        Image: =pobierz
+        ImagePosition: =ImagePosition.Center
+        Transparency: =0.5
+        Width: =828
+        X: =139
+        Y: =3
+        ZIndex: =2
+
+    Canvas2_1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =768
+        Width: =Parent.Width
+        Y: =
+        ZIndex: =3
+
+        DataCard2_1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =760
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Icon9 As icon.Search:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =30
+                Icon: =Icon.Search
+                OnSelect: =Navigate(WyszukiwarkaFrazWFV)
+                Width: =31
+                X: =1244
+                Y: =40
+                ZIndex: =1
+
+            Button8 As button:
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(164, 38, 44, 1)
+                FontWeight: =FontWeight.Semibold
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                OnSelect: =Navigate('Numer dostawy')
+                Size: =15
+                Text: ="Przycisk"
+                X: =221
+                ZIndex: =2
+
+    Rectangle1_3 As rectangle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =768
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        Width: =139
+        ZIndex: =4
+
+    Icon2_3 As icon.Folder:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(116, 116, 116, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =35
+        HoverColor: =RGBA(164, 38, 44, 1)
+        Icon: =Icon.Folder
+        X: =37
+        Y: =592
+        ZIndex: =5
+
+    Circle1_2 As circle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        Height: =45
+        Width: =45
+        X: =45
+        Y: =179
+        ZIndex: =7
+
+    Icon1_3 As icon.Home:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =35
+        HoverColor: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Główny)
+        X: =37
+        Y: =182
+        ZIndex: =8
+
+    Icon3_3 As icon.Document:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(116, 116, 116, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =35
+        HoverColor: =RGBA(164, 38, 44, 1)
+        Icon: =Icon.Document
+        OnSelect: =Navigate(RejestracjaReczna);NewForm(Form3) ; Set(varPowerId,GUID()) ; Reset(Dropdown1_12) ; Reset(Dropdown1_14) ; Reset(TextInput1_18) ; Reset(TextInput1_14) ; Reset(TextInput1_19) ; Reset(Dropdown1_25) ; Reset(TextInput1_20) ; Reset(DatePicker1_2) ; Reset(DatePicker1_3) ; Reset(Dropdown1_2) ; Reset(Dropdown1_3) ; Reset(TextInput1_21) ; Reset(Dropdown1_9) ; Reset(TextInput1_103) ; Reset(TextInput1_22) ; Reset(TextInput1_26) ; Reset(TextInput1_16) ; Reset(TextInput1_17)
+        X: =37
+        Y: =387
+        ZIndex: =9
+
+    Image1_3 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =66
+        Image: ='ab-logo'
+        Width: =137
+        ZIndex: =10
+
+    Rectangle3_1 As rectangle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        Height: =2
+        Width: =30
+        Y: =201
+        ZIndex: =11
+
+    Label2_1 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =768
+        Size: =13
+        Text: =""
+        Visible: =widocznośćPDF
+        Width: =1366
+        ZIndex: =12
+
+    PdfViewer1_1 As pdfViewer:
+        Document: =Dropdown1_7.Selected.Value
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =768
+        ShowControls: =true
+        Visible: =widocznośćPDF
+        Width: =1366
+        ZIndex: =13
+
+    Dropdown1_7 As dropdown:
+        BorderColor: =RGBA(166, 166, 169, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(153, 153, 153, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronFill: =RGBA(255,255,255,1)
+        ChevronHoverBackground: =RGBA(153, 153, 153, 1)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =2
+        FontWeight: =FontWeight.Lighter
+        Height: =25
+        HoverBorderColor: =RGBA(77, 77, 77, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Items: =CzytnikPDF
+        PaddingLeft: =12
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(89, 0, 0, 1)
+        SelectionFill: =RGBA(164, 38, 44, 1)
+        Size: =10
+        Visible: =widocznośćPDF
+        Width: =445
+        X: =460.5
+        Y: =20
+        ZIndex: =14
+
+    Icon1_1 As icon.CancelBadge:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(255, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =40
+        Icon: =Icon.CancelBadge
+        OnSelect: =Set(widocznośćPDF,false)
+        Visible: =widocznośćPDF
+        Width: =40
+        X: =964
+        Y: =11
+        ZIndex: =15
+
+    "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Height: =702
+        Items: =Sort(Fktury,'Created On',Descending)
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Width: =1227
+        X: =139
+        Y: =66
+        ZIndex: =16
+
+        NextArrow4 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(89, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent) ; Switch(ThisItem.'Status (crda9_status)',"Logistyka",Navigate(Logistyka);NewForm(Form5),"Weryfikacja 2",Navigate(Weryfikacja2);NewForm(Form5_1),"Zaksięgowane",Navigate(Zaksięgowane);NewForm(Form5_2),"Powiązanie ZZ i PZ",Navigate(PowiązanieZZiPZ),"Dokumenty nieistotne",Navigate(DokumentyNieistotne), "Archiwum dokumentów błędnych",Navigate(DokumentBledny),"Rejestracja ręczna",Navigate(RejestracjaReczna2),"Weryfikacja 1",EditForm(Form11);Navigate(Weryfikacja1)) ; Set(varSearch,false)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="Wyświetl szczegóły elementu"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator7 As rectangle:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Fill: =RGBA(89, 0, 0, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Label8 As label:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: |-
+                ="Numer zewnętrzny dokumentu:"
+            Width: =273
+            X: =26
+            Y: =10
+            ZIndex: =6
+
+        Label9 As label:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.'Nr zewnętrzny dokumentu'
+            X: =26
+            Y: =50
+            ZIndex: =7
+
+        Label10 As label:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =38
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: |-
+                ="Data wpływu:"
+            X: =381
+            Y: =12
+            ZIndex: =8
+
+        Label11 As label:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =Text(ThisItem.'Data wpływu',"dd.mm.yyyy")
+            X: =381
+            Y: =50
+            ZIndex: =9
+
+        Label10_1 As label:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =38
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: |-
+                ="Status:"
+            X: =594
+            Y: =12
+            ZIndex: =10
+
+        Label11_1 As label:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =85
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.'Status (crda9_status)'
+            Width: =200
+            X: =594
+            Y: =50
+            ZIndex: =11
+
+    Icon8_2 As icon.Reload:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =24
+        Icon: =Icon.Reload
+        OnSelect: =Refresh(ZZ) ; Refresh(PZ) ; Refresh(LacznikFViPZ) ; Refresh(LacznikFViZZ) ; Refresh(Pozycje) ; Refresh(Fktury)
+        Width: =34
+        X: =1289
+        Y: =42
+        ZIndex: =17
+
