@@ -27,7 +27,6 @@
       "FileAttachment_ExportSolutionUpload_SolutionFile": "ExportSolutionUpload",
       "FileAttachment_flowsession_AdditionalContext": "Flow Sessions (FileAttachment_flowsession_AdditionalContext)",
       "FileAttachment_flowsession_Outputs": "Flow Sessions (FileAttachment_flowsession_Outputs)",
-      "FileAttachment_KnowledgeArticle_msdyn_contentstore": "Knowledge Articles",
       "FileAttachment_Mailbox_ExchangeSyncStateXmlFileRef": "Mailboxes",
       "FileAttachment_msdyn_AIBFile_msdyn_File": "AI Builder Files",
       "FileAttachment_msdyn_AIConfiguration_msdyn_Model": "AI Configurations",
