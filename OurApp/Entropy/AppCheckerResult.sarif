@@ -16690,66 +16690,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Logistyka.Canvas1.DataCard1.Gallery6.Icon5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Logistyka.Canvas1.DataCard1.Gallery6.Icon5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Logistyka",
-                "type": "Logistyka.Canvas1.DataCard1.Gallery6.Icon5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Logistyka.Canvas1.DataCard1.Gallery6.Icon5.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Logistyka.Canvas1.DataCard1.Gallery6.Icon5.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Logistyka",
-                "type": "Logistyka.Canvas1.DataCard1.Gallery6.Icon5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Logistyka.Icon1_4.AccessibleLabel"
                 }
               ],
@@ -18173,66 +18113,6 @@
                 "member": "TabIndex",
                 "module": "PowiązanieZZiPZ",
                 "type": "PowiązanieZZiPZ.Canvas1_3.DataCard1_3.Gallery6_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PowiązanieZZiPZ.Canvas1_3.DataCard1_3.Gallery6_3.Icon5_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PowiązanieZZiPZ.Canvas1_3.DataCard1_3.Gallery6_3.Icon5_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PowiązanieZZiPZ",
-                "type": "PowiązanieZZiPZ.Canvas1_3.DataCard1_3.Gallery6_3.Icon5_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PowiązanieZZiPZ.Canvas1_3.DataCard1_3.Gallery6_3.Icon5_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PowiązanieZZiPZ.Canvas1_3.DataCard1_3.Gallery6_3.Icon5_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "PowiązanieZZiPZ",
-                "type": "PowiązanieZZiPZ.Canvas1_3.DataCard1_3.Gallery6_3.Icon5_2"
               }
             }
           ],
@@ -27501,66 +27381,6 @@
                 "member": "TabIndex",
                 "module": "Weryfikacja2",
                 "type": "Weryfikacja2.Canvas1_1.DataCard1_1.Gallery6_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Weryfikacja2.Canvas1_1.DataCard1_1.Gallery6_1.Icon5_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Weryfikacja2.Canvas1_1.DataCard1_1.Gallery6_1.Icon5_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Weryfikacja2",
-                "type": "Weryfikacja2.Canvas1_1.DataCard1_1.Gallery6_1.Icon5_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Weryfikacja2.Canvas1_1.DataCard1_1.Gallery6_1.Icon5_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Weryfikacja2.Canvas1_1.DataCard1_1.Gallery6_1.Icon5_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Weryfikacja2",
-                "type": "Weryfikacja2.Canvas1_1.DataCard1_1.Gallery6_1.Icon5_1"
               }
             }
           ],
